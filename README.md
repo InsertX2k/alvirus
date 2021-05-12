@@ -38,8 +38,6 @@ This virus creates a new user named "**Enterprise**" in your local **SYSTEM**, I
 <br/>
 
 ## FAQ: <br/>
-**Are you a cybercriminal?** <br/>
-Don't be foolish, of course I am not a cybercriminal, that's why I posted the source code of my virus here, **I just care about cyber security.** <br/>
 **How do I compile this into a working exe file?:** <br/>
 Use either `pyinstaller` or `py2exe`, but I strongly recommend `pyinstaller` for many reasons. <br/>
 For batch versions of this source code, use a tool named `Bat To Exe Converter by Fatih Kodak`. <br/>
