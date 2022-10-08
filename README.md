@@ -1,7 +1,6 @@
 # Azur Lane Virus
 A free and an open-source virus written in Batch or Python that infects Windows PCs, **It was written in Batch first, then right now it is converted into a working Python code.** 
 <br/>
-[Watch the virus on the real world on YouTube + the removal guide](https://www.youtube.com/watch?v=saKVYkusTFM)
 <br/>
 ![The Azur Lane Virus Project](https://user-images.githubusercontent.com/62176660/118047551-3535ce00-b37b-11eb-9823-05500c919eaa.png)
 <br/>
