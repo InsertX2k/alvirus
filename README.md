@@ -33,8 +33,6 @@ git clone https://github.com/insertx2k/alvirus
 This virus creates a new user named "**Enterprise**" in your local **SYSTEM**, If you want to escape from the virus you should guess the password of it. <br/>
 ![The lines used to create a user named Enterprise in your local SYSTEM](https://user-images.githubusercontent.com/62176660/118050326-53053200-b37f-11eb-90be-3a5c386c126e.jpg)
 <br/>
-**Let me help you guess it a bit better :** You love someone, Who shall this person be? <br/>
-**Whoever she is, her name will be the password.** (Not really, I am joking)
 <br/>
 
 ## FAQ: <br/>
