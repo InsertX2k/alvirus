@@ -33,4 +33,4 @@
 ::978f952a14a936cc963da21a135fa983
 @echo off
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d 0 /f
-exit
+exit /b 0
