@@ -4,7 +4,7 @@ A free and an open-source virus written in Batch or Python that infects Windows 
 ## How to test?
 Just clone/download this repository contents as a .zip file (ensure all files are in one directory), then right click on the file named `azur-lane-virus-installer-source-code.official.bat` then select "Run as Administrator" and click "Yes" if prompted, then enjoy!.
 
-I'm just too lazy to compile this into an executable, I forgot how to work on bat to exe + I switched to python a long ago so i no longer work on batch files anymore.
+I'm just too lazy to compile this into an executable, I can't remember how did I compile it + I switched to python a long ago so i no longer work on batch files anymore.
 <br/>
 ![The Azur Lane Virus Project](https://user-images.githubusercontent.com/62176660/118047551-3535ce00-b37b-11eb-9823-05500c919eaa.png)
 <br/>
